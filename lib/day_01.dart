@@ -1,5 +1,3 @@
-import 'dart:io';
-
 int floor(String input) {
   int floor = 0;
 
@@ -34,21 +32,4 @@ int findBasement(String input) {
   }
 
   throw Exception("Never enters basement");
-}
-
-void main() {
-  String testInput = File("test-input").readAsStringSync();
-  String realInput = File("input").readAsStringSync();
-
-  if (floor(testInput) != 3) {
-    throw Exception('Expected 3, got ${floor(testInput)}');
-  }
-
-  print(floor(realInput));
-
-  if (findBasement(testInput) != 1) {
-    throw Exception('Expected 3, got ${findBasement(testInput)}');
-  }
-
-  print(findBasement(realInput));
 }

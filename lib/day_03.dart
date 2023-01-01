@@ -1,5 +1,3 @@
-import 'dart:io';
-
 class Point {
   int x;
   int y;
@@ -65,18 +63,4 @@ int partTwo(String input) {
   }
 
   return houses.length;
-}
-
-void main() {
-  String testInput = File("test-input").readAsStringSync();
-  String realInput = File("input").readAsStringSync();
-
-  var partOneExample = partOne(testInput);
-
-  assert(partOneExample == 2);
-  print(partOne(realInput));
-
-  var partTwoExample = partTwo(testInput);
-  assert(partTwoExample == 11);
-  print(partTwo(realInput));
 }
