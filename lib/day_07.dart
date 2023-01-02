@@ -82,7 +82,7 @@ partOne(String input) {
     }
   }
 
-  return registers!;
+  return registers;
 }
 
 int partTwo(String input) {
