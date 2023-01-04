@@ -11,3 +11,4 @@ dev_dependencies:
 
 dependencies:
   crypto: ^3.0.2
+  trotter: ^2.0.0
